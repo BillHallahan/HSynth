@@ -5,7 +5,7 @@ module Preprocessor.Tests (preprocTests) where
 import Test.Tasty
 import Test.Tasty.HUnit
 
-import HSynth.Preprocessor.FuncAppReducer
+import HSynth.Preprocessor.FuncAppForm
 
 import G2.Language
 import qualified G2.Language.ExprEnv as E
@@ -27,7 +27,6 @@ testFAF e = testCase "FAF test"
 notTestFAF :: Expr -> TestTree
 notTestFAF e = testCase "Not FAF test"
             $ assertBool ("Failed on " ++ show e) (not $ isFuncAppForm eenv1 e) 
-
 
 fafExpr1 :: Expr
 fafExpr1 = Var (Id f tyVarA)

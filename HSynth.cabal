@@ -17,7 +17,7 @@ cabal-version:       >=1.10
 
 library
   exposed-modules:       
-                         HSynth.Preprocessor.FuncAppReducer
+                         HSynth.Preprocessor.FuncAppForm
   -- other-modules:         
   build-depends:         base >= 4.9 && <4.10
                        , g2 >= 0.1.0.0
